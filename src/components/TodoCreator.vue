@@ -34,7 +34,12 @@ const createTodo = () => {
 .input-wrap {
   display: flex;
   transition: 250ms ease;
-  border: 2px solid #0000ff;
+  border-radius: 8px;
+  padding: 20px;
+  background-image: linear-gradient(
+    rgba(4, 19, 156, 0.5),
+    rgba(5, 235, 228, 0.5)
+  );
 
   &.input-err {
     border-color: red;
@@ -50,6 +55,10 @@ const createTodo = () => {
     width: 100%;
     padding: 8px 6px;
     border: none;
+    background-image: linear-gradient(
+      rgba(4, 19, 156, 0.5),
+      rgba(5, 235, 228, 0.5)
+    );
 
     &:focus {
       outline: none;

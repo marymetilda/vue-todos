@@ -45,14 +45,14 @@ defineEmits(["toggle-complete", "edit-todo", "update-todo", "delete-todo"]);
         v-else
         icon="ph:pencil-fill"
         class="icon edit-icon"
-        color="41b080"
+        color="008000"
         width="22"
         @click="$emit('edit-todo', index)"
       />
       <Icon
         icon="ph:trash"
         class="icon trash-icon"
-        color="f95e5e"
+        color="8b0000"
         width="22"
         @click="$emit('delete-todo', todo.id)"
       />
@@ -65,8 +65,12 @@ li {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 10px;
-  background-color: #f1f1f1;
+  padding: 28px 16px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    rgba(4, 19, 156, 0.5),
+    rgba(5, 235, 228, 0.5)
+  );
   box-shadow:
     0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -81,7 +85,10 @@ li {
     appearance: none;
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-image: linear-gradient(
+      rgba(4, 19, 156, 0.5),
+      rgba(5, 235, 228, 0.5)
+    );
     border-radius: 50%;
     box-shadow:
       0 4px 6px -1px rgb(0 0 0 / 0.1),
@@ -102,7 +109,12 @@ li {
     input[type="text"] {
       width: 100%;
       padding: 2px 6px;
-      border: 2px solid #41b080;
+      border: 2px solid #a0ceea;
+      border-radius: 8px;
+      background-image: linear-gradient(
+        rgba(4, 19, 156, 0.5),
+        rgba(5, 235, 228, 0.5)
+      );
     }
   }
 
