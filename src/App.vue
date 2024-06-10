@@ -20,12 +20,44 @@ import TodoHeader from "./components/TodoHeader.vue";
 
 body {
   min-height: 100vh;
-  background-image: url("src/assets/feather.png");
+  background-image: linear-gradient(
+      rgba(4, 19, 156, 0.5),
+      rgba(5, 235, 228, 0.5)
+    ),
+    url("src/assets/feather.png");
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   height: 100%;
+}
+
+h1,
+p {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  padding-bottom: 8px;
+}
+
+p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(0 0 0 / 20%);
 }
 </style>

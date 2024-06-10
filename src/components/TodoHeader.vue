@@ -18,7 +18,11 @@ import { RouterLink } from "vue-router";
 
 <style lang="scss" scoped>
 header {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  opacity: 50%;
+  box-sizing:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   nav {
     display: flex;
