@@ -18,7 +18,7 @@ import { RouterLink } from "vue-router";
 
 <style lang="scss" scoped>
 header {
-  background-color: #ffffff;
+  background-color: white;
   opacity: 50%;
   box-sizing:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
