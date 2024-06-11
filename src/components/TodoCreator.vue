@@ -24,7 +24,7 @@ const createTodo = () => {
 
 <template>
   <div class="input-wrap" :class="{ 'input-err': todoState.invalid }">
-    <input type="text" v-model="todoState.todo" />
+    <input type="text" v-model="todoState.todo" @keydown.enter="createTodo" />
     <TodoButton @click="createTodo" />
   </div>
   <p v-show="todoState.invalid" class="err-msg text">{{ todoState.errMsg }}</p>

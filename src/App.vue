@@ -21,8 +21,8 @@ import TodoHeader from "./components/TodoHeader.vue";
 body {
   min-height: 100vh;
   background-image: linear-gradient(
-      rgba(4, 19, 156, 0.5),
-      rgba(5, 235, 228, 0.5)
+      rgba(98, 112, 237, 0.5),
+      rgba(174, 244, 241, 0.5)
     ),
     url("src/assets/feather.png");
 }
