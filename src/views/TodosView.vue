@@ -60,7 +60,7 @@ const deleteTodo = (todoId) => {
 <template>
   <main>
     <div class="container">
-      <h1 class="text">Create Todo</h1>
+      <h2 class="text">Create Todo</h2>
       <TodoCreator @create-todo="createTodo" />
       <ul class="todo-list" v-if="todoList.length > 0">
         <TodoItem
@@ -99,10 +99,14 @@ main {
   height: 100%;
   margin: 0 auto;
   padding: 40px 16px;
+  background-color: rgba(2, 2, 2, 0.5);
+  margin-top: 16px;
+  border-radius: 12px;
 
-  h1 {
+  h2 {
     margin-bottom: 16px;
     text-align: center;
+    color: #ccc;
   }
 
   .todo-list {
@@ -119,6 +123,12 @@ main {
     justify-content: center;
     gap: 8px;
     margin-top: 24px;
+    color: white;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
   }
 }
 </style>
