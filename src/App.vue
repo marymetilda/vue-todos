@@ -22,11 +22,7 @@ body {
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-      rgba(98, 112, 237, 0.5),
-      rgba(174, 244, 241, 0.5)
-    ),
-    url("https://thumbs.dreamstime.com/b/beautiful-background-flowers-roses-congratulations-49844171.jpg");
+  background-image: url("./assets/071.jpg");
 }
 
 .container {
@@ -37,15 +33,7 @@ body {
 
 h1,
 p {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  color: white;
 }
 
 h1 {

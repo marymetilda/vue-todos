@@ -33,29 +33,33 @@ defineEmits(["toggle-complete", "edit-todo", "update-todo", "delete-todo"]);
       </span>
     </div>
     <div class="todo-actions">
-      <Icon
-        v-if="todo.isEditing"
-        icon="ph:check-circle"
-        class="icon check-icon"
-        color="41b080"
-        width="22"
-        @click="$emit('edit-todo', index)"
-      />
-      <Icon
-        v-else
-        icon="ph:pencil-fill"
-        class="icon edit-icon"
-        color="008000"
-        width="22"
-        @click="$emit('edit-todo', index)"
-      />
-      <Icon
-        icon="ph:trash"
-        class="icon trash-icon"
-        color="8b0000"
-        width="22"
-        @click="$emit('delete-todo', todo.id)"
-      />
+      <div class="icon-container" v-if="todo.isEditing">
+        <Icon
+          icon="ph:check-circle"
+          class="icon check-icon"
+          color="#013220"
+          width="22"
+          @click="$emit('edit-todo', index)"
+        />
+      </div>
+      <div class="icon-container" v-else>
+        <Icon
+          icon="ph:pencil-fill"
+          class="icon edit-icon"
+          color="#013220"
+          width="22"
+          @click="$emit('edit-todo', index)"
+        />
+      </div>
+      <div class="icon-container">
+        <Icon
+          icon="ph:trash"
+          class="icon trash-icon"
+          color="8b0000"
+          width="22"
+          @click="$emit('delete-todo', todo.id)"
+        />
+      </div>
     </div>
   </li>
 </template>
@@ -86,8 +90,8 @@ li {
     width: 20px;
     height: 20px;
     background-image: linear-gradient(
-      rgba(4, 19, 156, 0.5),
-      rgba(5, 235, 228, 0.5)
+      rgba(4, 19, 156, 0.8),
+      rgba(5, 235, 228, 0.8)
     );
     border-radius: 50%;
     box-shadow:
@@ -97,6 +101,14 @@ li {
     &:checked {
       background-color: #41b080;
     }
+  }
+
+  .icon-container {
+    background-color: rgba(5, 235, 228, 0.8);
+    border-radius: 100%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
   }
 
   .todo {

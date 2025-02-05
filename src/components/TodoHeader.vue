@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
   <header>
     <nav class="container">
       <div class="branding">
-        <h1 class="text">My Todos</h1>
+        <h2 class="text">My Todos</h2>
       </div>
       <ul class="nav-routes">
         <RouterLink to="/">Home</RouterLink>
@@ -18,7 +18,8 @@ import { RouterLink } from "vue-router";
 
 <style lang="scss" scoped>
 header {
-  background-color: white;
+  padding: 16px;
+  background-color: #000;
   opacity: 50%;
   box-sizing:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -27,7 +28,7 @@ header {
   nav {
     display: flex;
     align-items: center;
-    padding: 25px 16px;
+    padding: 16px;
 
     .branding {
       display: flex;
@@ -38,12 +39,14 @@ header {
         max-width: 50px;
       }
 
-      h1 {
-        font-size: 24px;
+      h2 {
+        font-size: 32px;
+        color: #fff;
       }
     }
 
     .nav-routes {
+      color: white;
       display: flex;
       flex: 1;
       justify-content: flex-end;
